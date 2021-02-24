@@ -1,5 +1,5 @@
-import ForumPage from './ForumPage';
-import MainPage from './MainPage';
+import ForumPage from './ForumPage/ForumPage';
+import MainPage from './MainPage/MainPage';
 
 export {
   ForumPage,

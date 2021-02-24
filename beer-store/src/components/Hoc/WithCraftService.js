@@ -10,7 +10,8 @@ const WithCraftService = () => (Wrapped) => {
       <CraftServiceConsumer>
         {
           (craftService) => {
-            <Wrapped {...props} craftService={craftService}/>
+            return (
+              <Wrapped {...props} craftService={craftService}/>)
           }
         }
       </CraftServiceConsumer>

@@ -6,6 +6,14 @@ const craftsLoaded = (newCrafts) => {
   }
 }
 
+const brewerysLoaded = (newBrewerys) => {
+  return {
+    type: 'BREWERY_LOADED',
+    payload: newBrewerys
+  }
+}
+
 export {
-  craftsLoaded
+  craftsLoaded,
+  brewerysLoaded
 }
