@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import CraftListItem from '../CraftListItem';
+import Filter from '../Filter';
+import Sorting from '../Sorting';
+import Search from '../Search'
 // connect -  подключает компонент к стору редакса
 import { connect } from 'react-redux';
 import { WithCraftService } from '../Hoc';
@@ -21,13 +24,26 @@ class CraftList extends Component {
     const { crafts } = this.props;
     return (
       <div className="craft-container">
+      <div className="craft-select">
+        <div className="craft-search">
+          <Search/>
+        </div>
+        <div className="craft-filter">
+          <Filter/>
+        </div>
+        <div className="craft-sorting">
+          <Sorting/>
+        </div>
+      </div>
+      <div className="craft-items">
         { 
           crafts.crafts.map((craft) => {
             return (
-              <div key={craft.id}><CraftListItem craft={craft}/></div>
+              <CraftListItem key={craft.id} craft={craft}/>
             )
           })
-        } 
+        }
+      </div>
       </div>
     )
   }

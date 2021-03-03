@@ -22,7 +22,7 @@ class BreweryList extends Component {
         { 
           brewerys.brewerys.map((brewery) => {
             return (
-              <div key={brewery.id}><BreweryListItem brewery={brewery}/></div>
+              <BreweryListItem key={brewery.id} brewery={brewery}/>
             )
           })
         } 

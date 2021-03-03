@@ -1,0 +1,17 @@
+.brewery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+
+.brewery-item:hover {
+  background: #ccc;
+}
+
+.brewery-item:last-child {
+  border-bottom: none;
+}

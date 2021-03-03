@@ -1,6 +1,24 @@
 .craft-container {
-  width: 100%;
+  width: 95%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.craft-select {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.craft-search {
+  width: 100%;
+}
+.craft-filter {
+  margin-right: 10px;
+}
+.craft-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }

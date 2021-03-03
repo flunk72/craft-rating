@@ -1,19 +1,6 @@
 
 const initialState = {
-  brewerys: [
-    {
-      id: 1,
-      title: 'Saldens'
-    },
-    {
-      id: 2,
-      title: 'Rewort'
-    },
-    {
-      id: 3,
-      title: 'Jaws'
-    }
-  ]
+  brewerys: []
 }
 
 const brewerys = (state = initialState, action) => {
